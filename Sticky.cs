@@ -6,7 +6,7 @@ class Program
 {
     static void Main()
     {
-        Console.Title = "Min sticky noter";
+        Console.Title = "Sticky Notes In C# :)";
 
         string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "stickynotes.txt");
         List<string> stickyNotes = new List<string>();
