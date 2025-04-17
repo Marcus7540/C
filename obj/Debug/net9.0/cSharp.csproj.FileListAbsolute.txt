@@ -13,3 +13,7 @@ C:\Users\Makan\source\repos\cSharp\cSharp\obj\Debug\net9.0\refint\cSharp.dll
 C:\Users\Makan\source\repos\cSharp\cSharp\obj\Debug\net9.0\cSharp.pdb
 C:\Users\Makan\source\repos\cSharp\cSharp\obj\Debug\net9.0\cSharp.genruntimeconfig.cache
 C:\Users\Makan\source\repos\cSharp\cSharp\obj\Debug\net9.0\ref\cSharp.dll
+C:\Users\Makan\source\repos\cSharp\cSharp\obj\Debug\net9.0\cSharp.csproj.AssemblyReference.cache
+C:\Users\Makan\source\repos\cSharp\cSharp\bin\Debug\net9.0\AngleSharp.dll
+C:\Users\Makan\source\repos\cSharp\cSharp\bin\Debug\net9.0\YoutubeExplode.dll
+C:\Users\Makan\source\repos\cSharp\cSharp\obj\Debug\net9.0\cSharp.csproj.Up2Date

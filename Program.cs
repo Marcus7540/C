@@ -1,35 +1,45 @@
-﻿using System.ComponentModel.Design;
-using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
 
-Console.WriteLine("Hej");
-string userInput = Console.ReadLine().Trim().ToLower();
-
-if (userInput == "hej")
+class Program
 {
-    Console.WriteLine("Du är en hora");
-}
-else
-{
-    Console.WriteLine("Vill du öppna stackoverflow");
-    string JaNej = Console.ReadLine().Trim().ToLower();
-    if (JaNej == "ja")
+    static void Main()
     {
-        string url = "https://youtube.com";
-        Process.Start(new ProcessStartInfo
+        Console.Title = "My Sticky Notes App";
+        List<string> stickyNotes = new List<string>();
+
+        while (true)
         {
-            FileName = url,
-            UseShellExecute = true
-        });
-    }
-    else if (JaNej == "nej")
-    {
-        Console.WriteLine("Okej som du vill");
-        Environment.Exit(0);
-    }
-    else
-    {
-        Process.Start("C:\\Users\\Makan\\AppData\\Roaming\\Spotify\\spotify.exe");
+            Console.Clear();
+            Console.WriteLine("Sticky notes (type 'list' to view all, 'exit' to quit):");
+            string sticky = Console.ReadLine();
+
+            if (sticky.ToLower() == "exit")
+            {
+                break;
+            }
+            else if (sticky.ToLower() == "list")
+            {
+                Console.Clear();
+                Console.WriteLine("All Sticky Notes:\n");
+                if (stickyNotes.Count == 0)
+                {
+                    Console.WriteLine("No notes yet.");
+                }
+                else
+                {
+                    foreach (string note in stickyNotes)
+                    {
+                        Console.WriteLine("- " + note);
+                    }
+                }
+                Console.WriteLine("\nPress Enter to continue...");
+                Console.ReadLine();
+            }
+            else
+            {
+                stickyNotes.Add(sticky);
+            }
+        }
     }
 }
-
-

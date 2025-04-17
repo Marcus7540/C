@@ -1,0 +1,2 @@
+C:\Users\Makan\source\repos\cSharp\cSharp\bin\Release\net9.0\win-x64\publish\cSharp.pdb
+C:\Users\Makan\source\repos\cSharp\cSharp\bin\Release\net9.0\win-x64\publish\cSharp.exe
